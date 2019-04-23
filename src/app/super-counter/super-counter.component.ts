@@ -8,27 +8,22 @@ import { SuperCounter } from '../super-counter';
 })
 export class SuperCounterComponent implements OnInit {
   @Input() counter: SuperCounter;
-  level: number;
 
-  constructor() {
-    this.level = 1;
-  }
+  constructor() {}
 
-  ngOnInit() {
-  }
+  ngOnInit() {}
 
   /**
    * Increase the counter value
    */
   increment() {
-    this.counter.value++;
+    this.counter.value += 3;
   }
 
   /**
    * Decrease the counter value
    */
   decrement() {
-    this.counter.value--;
+    this.counter.value -= 3;
   }
-
 }

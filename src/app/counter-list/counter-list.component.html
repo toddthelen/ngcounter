@@ -3,6 +3,8 @@
   <button class="btn btn-primary btn-lg" (click)="create()">Create Counter</button>
 </div>
 <div class="row">
-  <super-counter class="col-8" *ngFor="let scounter of superCounters" [counter]="scounter"></super-counter>
-  <counter class="col-4" *ngFor="let counter of counters" [counter]="counter"></counter>
+  <colossal-counter class="col-12" *ngFor="let ccounter of colossalCounters" [counter]="ccounter"></colossal-counter>
+  <super-duper-counter class="col-9" *ngFor="let sdcounter of superDupers" [counter]="sdcounter"></super-duper-counter>
+  <super-counter class="col-6" *ngFor="let scounter of superCounters" [counter]="scounter"></super-counter>
+  <counter class="col-3" *ngFor="let counter of counters" [counter]="counter"></counter>
 </div>
