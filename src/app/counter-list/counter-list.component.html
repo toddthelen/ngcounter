@@ -1,0 +1,23 @@
+<div>
+    <button
+      (click)="addCounter()"
+    >
+    New Counter
+    </button>
+    <div class="counter-grid">
+      <counter-super
+        *ngFor="let counter of superCounters"
+        count="0"
+      ></counter-super>
+      <counter-detail
+        *ngFor="let counter of counters"
+        count="0"
+      ></counter-detail>
+    </div>
+    <div>
+      Counters: {{ counters.length }}
+    </div>
+    <div>
+      Super Counters: {{ superCounters.length }}
+    </div>
+  </div>

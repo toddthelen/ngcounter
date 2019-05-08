@@ -1,0 +1,16 @@
+<div class="counter">
+    <div class="count">{{ count }}</div>
+  
+    <div class="counter-buttons">
+      <button
+        [disabled]="count <= 0"
+        (click)="decrease()"
+      >Subtract 3</button>
+  
+      <button
+        (click)="increase()"
+      >Add 3</button>
+    </div>
+  </div>
+  
+  
