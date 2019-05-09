@@ -17,7 +17,8 @@ describe('CounterDetailComponent', () => {
     fixture = TestBed.createComponent(CounterDetailComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
-  });
+  }); 
+  
 
   it('should create', () => {
     expect(component).toBeTruthy();

@@ -15,6 +15,8 @@ export class CounterListComponent implements OnInit {
 
   addCounter() {
     this.counters.push(new CounterDetailComponent())
+    console.log('Counter :', this.counters)
+    console.log('superCounter :', this.superCounters)
     if (this.counters.length === 6) {
       this.superCounters.push(new CounterSuperComponent());
       this.counters = [];
